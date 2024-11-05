@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Gombe State University</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Additional CSS for Gallery */
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .gallery-item {
+            width: calc(25% - 10px);
+            cursor: pointer;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        /* Lightbox Modal */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 8px;
+        }
+
+        .lightbox:target {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <!-- Navbar content -->
+    </nav>
+
+    <header style="background-image: url('images/gallery-bg.jpg');">
+        <h1>Gallery</h1>
+    </header>
+
+    <section class="gallery-container">
+        <!-- Gallery images, link to open lightbox on click -->
+        <div class="gallery-item">
+            <a href="#img1">
+                <img src="images/Picture1.png" alt="University Main Gate">
+            </a>
+        </div>
+        <div class="gallery-item">
+            <a href="#img2">
+                <img src="images/admin round.png" alt="Campus Building">
+            </a>
+        </div>
+        <div class="gallery-item">
+            <a href="#img3">
+                <img src="images/Faculty of sciences.png" alt="Faculty of Sciences">
+            </a>
+        </div>
+        <div class="gallery-item">
+            <a href="#img3">
+                <img src="images/faculty of education 2.png" alt="Faculty of Education
+            </a>
+        </div>
+        <div class="gallery-item">
+            <a href="#img3">
+                <img src="images/faculty of law.png" alt="Faculty of Law">
+            </a>
+        </div>
+        <div class="gallery-item">
+            <a href="#img3">
+                <img src="images/faculty of pharmacy.png" alt="Faculty of Pharmaceutical Sciences">
+            </a>
+        </div>
+
+
+    </section>
+
+    <!-- Lightbox Modal for each image -->
+    <div class="lightbox" id="img1">
+        <img src="images/Arts and social sciences.png" alt="Faculty of Arts and Social Sciences">
+        <a href="#" class="close">×</a>
+    </div>
+
+    <div class="lightbox" id="img2">
+        <img src="images/Diploma 2.png" alt="Campus Building 2">
+        <a href="#" class="close">×</a>
+    </div>
+
+    <div class="lightbox" id="img3">
+        <img src="images/diploma site.png" alt="Student Activities">
+        <a href="#" class="close">×</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Gombe State University. All rights reserved.</p>
+    </footer>
+</body>
+</html>

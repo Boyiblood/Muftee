@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Gombe State University</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <!-- Navbar content -->
+    </nav>
+
+    <header style="background-image: url('images/contact-bg.jpg');">
+        <h1>Contact Us</h1>
+    </header>
+
+    <section class="contact-section">
+        <h2>Contact Information</h2>
+        <p>Gombe State University, Gombe State, Nigeria</p>
+        <p>Phone: +234-901-584-1143</p>
+        <p>Email: muhammadbelloadamu426@gmail.com</p>
+
+        <h2>Send Us a Message</h2>
+        <form action="contact_process.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <li><a href="index.html">Back to Home</a></li>
+
+    <footer>
+        <p>&copy; 2024 Gombe State University. All rights reserved.</p>
+    </footer>
+</body>
+</html>
